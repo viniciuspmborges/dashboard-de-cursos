@@ -15,6 +15,8 @@ def get_user_info(username):
 
 
 # Exemplo de uso
-username = "admin' OR '1'='1"
+username = input(
+    "Digite o nome de usuário: "
+)  # Aqui o usuário pode inserir um payload SQL, como ' OR '1'='1
 user_info = get_user_info(username)
 print(user_info)
