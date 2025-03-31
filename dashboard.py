@@ -6,7 +6,7 @@ import os
 import shutil
 from datetime import datetime
 
-# Carregar o arquivo Excel
+# Carregar arquivo Excel
 file_path = "Cursos realizados.xlsx"  # Substitua pelo caminho correto do arquivo
 df = pd.read_excel(file_path, engine="openpyxl")
 
