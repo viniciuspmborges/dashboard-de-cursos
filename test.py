@@ -15,12 +15,10 @@ def login():
     password = request.form["password"]
 
     # SQL Injection vulnerability
-    query = (
-        f"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'"
-    )
+    query = "SELECT * FROM users WHERE username = ? AND password = ?"
     conn = sqlite3.connect("database.db")
     cursor = conn.cursor()
-    cursor.execute(query)
+    cursor.execute(query, (username, password))
     user = cursor.fetchone()
 
     if user:
