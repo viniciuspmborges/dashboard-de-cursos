@@ -5,6 +5,7 @@ Este projeto é uma aplicação desenvolvida em Python utilizando as bibliotecas
 ## Funcionalidades
 
 ### 1. **Tabela de Cursos**
+![image](https://github.com/user-attachments/assets/d5ab79f0-d9ff-49dc-bf94-ab0dff6d16ff)
 - Exibe uma tabela interativa com os cursos realizados.
 - Permite aplicar filtros por:
   - Intervalo de datas (início e conclusão).
@@ -18,11 +19,15 @@ Este projeto é uma aplicação desenvolvida em Python utilizando as bibliotecas
 - Possibilidade de exportar os dados filtrados para um arquivo `.txt`.
 
 ### 2. **Gráfico de Carga Horária por Área de Conhecimento**
+![image](https://github.com/user-attachments/assets/e6274468-2fe6-4af7-a46c-921de1a0d7c0)
 - Gera um gráfico de barras horizontal interativo.
 - Mostra a carga horária total agrupada por área de conhecimento.
 - Permite selecionar áreas específicas para análise.
 
 ### 3. **Gráfico de Cursos Concluídos**
+![image](https://github.com/user-attachments/assets/73c776cb-6b82-4b32-860e-5ca673dab3c6)
+![image](https://github.com/user-attachments/assets/74f25fb6-e837-418c-be10-da2c152d772a)
+
 - Exibe gráficos interativos para acompanhar:
   - Número de cursos concluídos ao longo do tempo.
   - Carga horária total ao longo do tempo.
@@ -33,6 +38,7 @@ Este projeto é uma aplicação desenvolvida em Python utilizando as bibliotecas
 - Inclui informações detalhadas sobre os cursos concluídos em cada período.
 
 ### 4. **Exportação de Arquivos**
+![image](https://github.com/user-attachments/assets/9beea777-949c-41c9-b1c0-8a4160b4bef8)
 - Filtra os cursos concluídos com base em um intervalo de datas.
 - Exporta os certificados correspondentes para um diretório específico.
 - Compacta os arquivos exportados em um arquivo `.zip` para facilitar o download.
