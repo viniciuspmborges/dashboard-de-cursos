@@ -4,7 +4,6 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-# Hardcoded credentials (Insecure)
 USERNAME = "admin"
 PASSWORD = "password123"
 
@@ -14,7 +13,6 @@ def login():
     username = request.form["username"]
     password = request.form["password"]
 
-    # SQL Injection vulnerability
     query = "SELECT * FROM users WHERE username = ? AND password = ?"
     conn = sqlite3.connect("database.db")
     cursor = conn.cursor()
@@ -31,7 +29,6 @@ def login():
 def upload():
     file = request.files["file"]
 
-    # Unrestricted file upload vulnerability
     file.save(os.path.join("/uploads", file.filename))
 
     return "File uploaded"
@@ -40,8 +37,6 @@ def upload():
 @app.route("/command", methods=["POST"])
 def command():
     cmd = request.form["cmd"]
-
-    # Command injection vulnerability
     os.system(cmd)
 
     return "Command executed"
