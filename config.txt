@@ -1,0 +1,6 @@
+AWS Access Key ID: AKIAIOSFODNN7EXAMPLE
+AWS Secret Access Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+GitHub Personal Access Token: ghp_1234567890abcdefghijklmnopqrstuvwxyz1234
+Slack API Token: xoxb-123456789012-123456789012-abcdefghijklmnopqrstuvwx
+Google API Key: AIzaSyA-1234567890abcdefghijklmnopqrstuvwxyz123456
+Azure Storage Account Key: Eby8vdM02xNOcqFlq1f/N2Lk1sHB2E4h3m4bLxVgZtq6tup4i1Z6zQ==
