@@ -9,14 +9,11 @@ from datetime import datetime
 # Carregar arquivo Excel
 file_path = "Cursos realizados.xlsx"  # Substitua pelo caminho correto do arquivo
 df = pd.read_excel(file_path, engine="openpyxl")
-
 # Converter colunas de data para datetime
 df["Data de início"] = pd.to_datetime(df["Data de início"], format="%d/%m/%Y")
 df["Data de conclusão"] = pd.to_datetime(df["Data de conclusão"], format="%d/%m/%Y")
-
 # Título do dashboard
 st.title("Dashboard de Cursos")
-
 # Sidebar for navigation
 page = st.sidebar.selectbox(
     "Selecione a página",
@@ -27,6 +24,12 @@ page = st.sidebar.selectbox(
         "Exportar",
     ],
 )
+
+# Exibir a tabela de cursos
+st.sidebar.write("Selecione uma opção no menu lateral para navegar entre as páginas.")
+st.sidebar.write("Desenvolvido por [Seu Nome]")
+st.sidebar.write("Data: ", datetime.now().strftime("%d/%m/%Y"))
+st.sidebar.write("Versão: 1.0")
 
 if page == "Tabela de Cursos":
     # Filtros de data
